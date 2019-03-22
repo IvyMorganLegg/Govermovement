@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.teamtreehouse.oslist" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning">
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+
+        </activity>
+        <activity
+            android:name=".RepsNext"
+            android:label="Reps up for Election"/>
+        <activity
+            android:name=".LawsCurrent"
+            android:label="Laws up for Vote"/>
+        <activity
+            android:name=".webview"
+            android:label="Franklin Country"/>
+        <activity
+            android:name=".webview1"
+            android:label="Required Information"/>
+        <activity
+            android:name=".webview2"
+            android:label="How to Register"/>
+        <activity
+            android:name=".webview3"
+            android:label="Important Dates"/>
+        <activity
+            android:name=".SplashScreen"
+            android:theme="@style/splashscreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".BillsFailed" />
+        <activity android:name=".BillsPassed"/>
+        <activity android:name=".PastBills"/>
+        <activity android:name=".CurrentLocal"/>
+        <activity android:name=".CurrentState"/>
+
+    </application>
+
+</manifest>

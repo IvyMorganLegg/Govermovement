@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="litproduction.comforttechnology"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="15"
+        android:targetSdkVersion="27" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:debuggable="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:testOnly="true"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.teamtreehouse.oslist.MainActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.teamtreehouse.oslist.RepsNext"
+            android:label="Reps up for Election" />
+        <activity
+            android:name="com.teamtreehouse.oslist.LawsCurrent"
+            android:label="Laws up for Vote" />
+        <activity
+            android:name="com.teamtreehouse.oslist.webview"
+            android:label="Franklin Country" />
+        <activity
+            android:name="com.teamtreehouse.oslist.webview1"
+            android:label="Required Information" />
+        <activity
+            android:name="com.teamtreehouse.oslist.webview2"
+            android:label="How to Register" />
+        <activity
+            android:name="com.teamtreehouse.oslist.webview3"
+            android:label="Important Dates" />
+        <activity
+            android:name="com.teamtreehouse.oslist.SplashScreen"
+            android:theme="@style/splashscreen" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.teamtreehouse.oslist.BillsFailed" />
+        <activity android:name="com.teamtreehouse.oslist.BillsPassed" />
+        <activity android:name="com.teamtreehouse.oslist.PastBills" />
+        <activity android:name="com.teamtreehouse.oslist.CurrentLocal" />
+        <activity android:name="com.teamtreehouse.oslist.CurrentState" />
+    </application>
+
+</manifest>
